@@ -7,17 +7,17 @@ spec:
   selector:
     matchLabels:
       app: java-demo-001
-    template:
-      metadata:
+  template:
+    metadata:
       labels:
         app: java-demo-001
-      spec:
-        containers:
-        - name: java-demo-001
-          image: registry.cn-hangzhou.aliyuncs.com/gisuni-dev/java-demo:v1
-          imagePullPolicy: Always
-          ports:
-          - containerPort: 8080
+    spec:
+      containers:
+      - name: java-demo-001
+        image: registry.cn-hangzhou.aliyuncs.com/gisuni-dev/java-demo:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
           
 ---
 apiVersion: v1
